@@ -1,0 +1,98 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+        .container {
+            border: 1px solid black;
+            margin: 20px auto;
+            width: 800px;
+            height: 400px;
+            box-sizing: border-box;
+        }
+        .box {
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .flex {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <!-- Layout 1 -->
+    <div class="container">
+        <header class="box flex" style="height:65px;">
+            <div class="box" style="width:30%;"></div>
+            <div class="box" style="width:70%;"></div>
+        </header>
+        <div class="flex" style="height:270px;">
+            <aside class="box" style="width:15%;"></aside>
+            <main class="box" style="width:70%;"></main>
+            <aside class="box" style="width:15%;"></aside>
+        </div>
+        <footer class="box" style="height:65px;"></footer>
+    </div>
+    <br/>
+    <!-- Layout 2 -->
+    <div class="container">
+        <header class="box" style="height:70px;"></header>
+        <div class="flex" style="height:330px;">
+            <aside class="box" style="width:100px;"></aside>
+            <main class="box" style="flex:1;"></main>
+        </div>
+    </div>
+
+    <!-- Layout 3 -->
+    <div class="container">
+        <header class="box" style="height:70px;"></header>
+        <div class="flex" style="height:330px;">
+            <main class="box" style="flex:1;"></main>
+            <aside class="box" style="width:100px;"></aside>
+        </div>
+    </div>
+
+    <!-- Layout 4 -->
+    <div class="container">
+        <header class="box" style="height:70px;"></header>
+        <div class="flex" style="height:260px;">
+            <main class="box" style="flex:1;"></main>
+            <aside class="box" style="width:100px;"></aside>
+        </div>
+        <footer class="box" style="height:70px;"></footer>
+    </div>
+
+    <!-- Layout 5 -->
+    <div class="container flex" style="flex-direction:column;">
+        <header class="flex" style="height:80px;">
+            <div class="box" style="width:250px;"></div>
+            <div class="box" style="flex:1;"></div>
+        </header>
+        <nav class="box" style="height:50px;"></nav>
+        <div class="flex" style="flex:1;">
+            <aside class="box" style="width:150px;"></aside>
+            <main class="box" style="flex:1;"></main>
+        </div>
+    </div>
+
+    <!-- Layout 6 -->
+    <div class="container flex" style="flex-direction:column;">
+        <header class="flex" style="height:80px;">
+            <div class="box" style="flex:1;"></div>
+        </header>
+        <nav class="box" style="height:50px;"></nav>
+        <div class="flex" style="flex:1;">
+            <aside class="box" style="width:150px;"></aside>
+            <main class="box" style="flex:1;"></main>
+        </div>
+    </div>
+
+</body>
+</html>
